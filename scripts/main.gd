@@ -1,4 +1,11 @@
 extends Node2D
 
-var score =0
-var time=0
+@onready var score:float = 0.0
+@onready var time:float = 0.0
+
+func Update_score(amount:float):#
+	score+=amount
+	
+func _process(delta: float) -> void:
+	time +=delta 
+	
