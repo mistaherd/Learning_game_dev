@@ -12,16 +12,17 @@ enum Player_Facing {North,South,East,West}
 func _physics_process(delta: float) -> void:
 	direction_x = Input.get_axis("Player_walk_left","Player_walk_right")
 	direction_y = Input.get_axis("Player_walk_up","Player_walk_down")
-	
+
 	var Input_direction=Vector2(direction_x,direction_y)
 	if Input_direction.length()>0:
-		_set_player_state(Player_state.Walk)
+		player_state=Player_state.Walk
 		velocity=Input_direction.normalized()*speed
 		
 	else:
-		_set_player_state(Player_state.Idle)
+	
 		velocity.x=move_toward(velocity.x,0,speed)
 		velocity.y=move_toward(velocity.y,0,speed)
+		player_state=Player_state.Idle
 	# enables collsions	
 	move_and_slide()
 	if direction_y==-1 :
@@ -36,19 +37,21 @@ func _physics_process(delta: float) -> void:
 	elif direction_x==1:
 		player_facing=Player_Facing.East
 		
-	print(direction_x,direction_y,"/t Playerfacing: ",player_facing)
+	
 ### state machine  
 ### this is for sound and animations 
 func _set_player_state(state:Player_state):
-	if state == player_state:return
+	
 	
 	match state:
 		Player_state.Idle:
+		
 			set_Idle()
 		Player_state.Walk:
 			set_Move()
 
 func set_Idle():
+	
 	match player_facing:
 		Player_Facing.North:
 			
