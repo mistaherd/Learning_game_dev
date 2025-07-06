@@ -5,7 +5,7 @@ extends Node2D
 
 func Update_score(amount:float):#
 	score+=amount
-	
+	#wwwwew
 func _process(delta: float) -> void:
 	time +=delta 
 	
