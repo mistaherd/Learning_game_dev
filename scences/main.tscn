@@ -10,8 +10,6 @@ script = ExtResource("1_i2nf4")
 [node name="Player" parent="." instance=ExtResource("2_am3uj")]
 
 [node name="Test_level" parent="." instance=ExtResource("3_8edsk")]
-
-[node name="Test_level_vic" parent="." instance=ExtResource("3_8edsk")]
-position = Vector2(7, -107)
+show_behind_parent = true
 
 [node name="Diggable area" type="Area2D" parent="."]
