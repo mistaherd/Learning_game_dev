@@ -1,22 +1,15 @@
-[gd_scene load_steps=6 format=3 uid="uid://7fwiyrjivh03"]
+[gd_scene load_steps=5 format=3 uid="uid://7fwiyrjivh03"]
 
-[ext_resource type="Script" uid="uid://dbw2wy54eogum" path="res://scences/procedural_level_gen.gd" id="1_qfavv"]
+[ext_resource type="Script" uid="uid://dbw2wy54eogum" path="res://scripts/procedural_level_gen.gd" id="1_qfavv"]
 [ext_resource type="TileSet" uid="uid://b1gx43lyf53n5" path="res://resources/assets/Main_tileset.tres" id="1_s5nsg"]
-
-[sub_resource type="Gradient" id="Gradient_qfavv"]
-interpolation_mode = 1
-offsets = PackedFloat32Array(0, 0.548611, 0.708333, 0.868056)
-colors = PackedColorArray(0.046001, 0.283838, 1, 1, 0.835805, 0.948827, 0.211369, 1, 0.234229, 0.843147, 0.394634, 1, 0.345797, 0.275055, 0.102681, 1)
-
-[sub_resource type="FastNoiseLite" id="FastNoiseLite_mb0mo"]
-
-[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_ioft1"]
-color_ramp = SubResource("Gradient_qfavv")
-noise = SubResource("FastNoiseLite_mb0mo")
+[ext_resource type="Texture2D" uid="uid://bewduxqd75fhb" path="res://resources/assets/procedural_level_gen.tres" id="2_mb0mo"]
+[ext_resource type="PackedScene" uid="uid://o7sia74lawc8" path="res://scences/Player.tscn" id="4_ioft1"]
 
 [node name="Procedural_level_gen" type="Node2D"]
 script = ExtResource("1_qfavv")
-noise_height_text = SubResource("NoiseTexture2D_ioft1")
+noise_height_text = ExtResource("2_mb0mo")
 
 [node name="TileMapLayer" type="TileMapLayer" parent="."]
 tile_set = ExtResource("1_s5nsg")
+
+[node name="Player" parent="." instance=ExtResource("4_ioft1")]
