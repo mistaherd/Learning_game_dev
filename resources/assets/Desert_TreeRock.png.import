@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://0mc82e0vr75w"
-path="res://.godot/imported/treasure chests.png-00158ba0658eac38f705bbccdef7337e.ctex"
+uid="uid://bhw11kma6kdx2"
+path="res://.godot/imported/Desert_TreeRock.png-3c7d7c7aac2f7a6b5dd7bc850d3799ae.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/treasure chests.png"
-dest_files=["res://.godot/imported/treasure chests.png-00158ba0658eac38f705bbccdef7337e.ctex"]
+source_file="res://resources/assets/Desert_TreeRock.png"
+dest_files=["res://.godot/imported/Desert_TreeRock.png-3c7d7c7aac2f7a6b5dd7bc850d3799ae.ctex"]
 
 [params]
 

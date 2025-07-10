@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bs5mt1xy8fhlv"
-path="res://.godot/imported/Desert_A1.png-f740b78d558789d376c7bd2a0d1c808f.ctex"
+uid="uid://06tr8wfuat8g"
+path="res://.godot/imported/pirate1_idle_run_carry_cheer_cry_sprite_28x5.png-aeb635ffaa982194b908f2c936236f62.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Desert_A1.png"
-dest_files=["res://.godot/imported/Desert_A1.png-f740b78d558789d376c7bd2a0d1c808f.ctex"]
+source_file="res://resources/assets/pirate1_idle_run_carry_cheer_cry_sprite_28x5.png"
+dest_files=["res://.godot/imported/pirate1_idle_run_carry_cheer_cry_sprite_28x5.png-aeb635ffaa982194b908f2c936236f62.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bhw11kma6kdx2"
-path="res://.godot/imported/Desert_TreeRock.png-0f573dd494977284adaec5232c32ebef.ctex"
+uid="uid://7imq23a50rug"
+path="res://.godot/imported/spr_X.png-498515d7c0654e2a4fe3dc1bf1aa7ed6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Desert_TreeRock.png"
-dest_files=["res://.godot/imported/Desert_TreeRock.png-0f573dd494977284adaec5232c32ebef.ctex"]
+source_file="res://resources/assets/spr_X.png"
+dest_files=["res://.godot/imported/spr_X.png-498515d7c0654e2a4fe3dc1bf1aa7ed6.ctex"]
 
 [params]
 

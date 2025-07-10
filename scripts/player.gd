@@ -6,9 +6,12 @@ enum Player_Facing {North,South,East,West}
 @onready var player_facing:Player_Facing=Player_Facing.South
 ## movement section
 @onready var animated_sprite_2d: AnimatedSprite2D = $AnimatedSprite2D
+@onready var player: Player = $"."
 
 @onready var direction_x
 @onready var direction_y
+func  _ready() -> void:
+	player.visibility_layer=2
 func _physics_process(delta: float) -> void:
 	direction_x = Input.get_axis("Player_walk_left","Player_walk_right")
 	direction_y = Input.get_axis("Player_walk_up","Player_walk_down")

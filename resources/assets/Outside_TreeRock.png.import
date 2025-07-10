@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://be3vjbhk8j1eb"
-path="res://.godot/imported/test_game_tileset_1.png-eccdfabf180b501a6f717eb1b7812751.ctex"
+uid="uid://dlop6efxumv8t"
+path="res://.godot/imported/Outside_TreeRock.png-c7132a802a5df29026140f6b27dfadd3.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://resources/test_game_tileset_1.png"
-dest_files=["res://.godot/imported/test_game_tileset_1.png-eccdfabf180b501a6f717eb1b7812751.ctex"]
+source_file="res://resources/assets/Outside_TreeRock.png"
+dest_files=["res://.godot/imported/Outside_TreeRock.png-c7132a802a5df29026140f6b27dfadd3.ctex"]
 
 [params]
 

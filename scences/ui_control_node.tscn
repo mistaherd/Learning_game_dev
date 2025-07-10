@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://bfm61c4agb41m"]
 
-[ext_resource type="FontFile" uid="uid://bbd4yfb8x7sbn" path="res://resources/Rapscallion-q341.ttf" id="1_vchci"]
+[ext_resource type="FontFile" uid="uid://bbd4yfb8x7sbn" path="res://resources/assets/Rapscallion-q341.ttf" id="1_vchci"]
 [ext_resource type="Script" uid="uid://bsun1wuec2tth" path="res://scripts/ui_control_node.gd" id="1_xl0al"]
 
 [sub_resource type="Theme" id="Theme_4xlgg"]
@@ -8,15 +8,16 @@ default_font = ExtResource("1_vchci")
 default_font_size = 31
 
 [node name="UI_control_node" type="Camera2D"]
+zoom = Vector2(2, 2)
 script = ExtResource("1_xl0al")
 
 [node name="Header_ui" type="Control" parent="."]
 layout_mode = 3
 anchors_preset = 0
 offset_left = -568.8
-offset_top = -319.545
+offset_top = -319.546
 offset_right = -528.8
-offset_bottom = -279.545
+offset_bottom = -279.546
 
 [node name="Score_label" type="Label" parent="Header_ui"]
 layout_mode = 0

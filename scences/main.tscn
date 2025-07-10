@@ -1,17 +1,11 @@
 [gd_scene load_steps=4 format=3 uid="uid://b4wvo85vag560"]
 
-[ext_resource type="Script" uid="uid://5l2l6pkuosnh" path="res://scripts/main.gd" id="1_i2nf4"]
-[ext_resource type="PackedScene" uid="uid://o7sia74lawc8" path="res://scences/Player.tscn" id="2_am3uj"]
-[ext_resource type="PackedScene" uid="uid://dxkwbmm1p1gm8" path="res://scences/test_scences/test_level.tscn" id="3_8edsk"]
+[ext_resource type="Script" uid="uid://dbw2wy54eogum" path="res://scripts/procedural_level_gen.gd" id="1_3if0j"]
+[ext_resource type="Texture2D" uid="uid://bewduxqd75fhb" path="res://resources/assets/procedural_level_gen.tres" id="2_3if0j"]
+[ext_resource type="PackedScene" uid="uid://7fwiyrjivh03" path="res://scences/procedural_level_gen.tscn" id="4_41s58"]
 
 [node name="Main" type="Node2D"]
-script = ExtResource("1_i2nf4")
+script = ExtResource("1_3if0j")
+noise_height_text = ExtResource("2_3if0j")
 
-[node name="Player" parent="." instance=ExtResource("2_am3uj")]
-
-[node name="Test_level" parent="." instance=ExtResource("3_8edsk")]
-
-[node name="Test_level_vic" parent="." instance=ExtResource("3_8edsk")]
-position = Vector2(7, -107)
-
-[node name="Diggable area" type="Area2D" parent="."]
+[node name="Procedural_level_gen" parent="." instance=ExtResource("4_41s58")]
