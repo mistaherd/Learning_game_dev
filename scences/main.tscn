@@ -1,8 +1,11 @@
-[gd_scene load_steps=3 format=3 uid="uid://b4wvo85vag560"]
+[gd_scene load_steps=4 format=3 uid="uid://b4wvo85vag560"]
 
 [ext_resource type="Script" uid="uid://dbw2wy54eogum" path="res://scripts/procedural_level_gen.gd" id="1_3if0j"]
 [ext_resource type="Texture2D" uid="uid://bewduxqd75fhb" path="res://resources/assets/procedural_level_gen.tres" id="2_3if0j"]
+[ext_resource type="PackedScene" uid="uid://o7sia74lawc8" path="res://scences/Player.tscn" id="3_8edsk"]
 
 [node name="Main" type="Node2D"]
 script = ExtResource("1_3if0j")
 noise_height_text = ExtResource("2_3if0j")
+
+[node name="Player" parent="." instance=ExtResource("3_8edsk")]
